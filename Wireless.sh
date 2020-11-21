@@ -25,7 +25,7 @@ echo "** 1. Ataca uma Rede                                  ***"
 echo "** 2. Ataca duas Redes                                ***"
 echo "** 3. Ataca Uma Rede (Macchanger)                     ***"
 echo "** 4. Ataca Com Mdk3,Aireplay-ng,Macchanger           ***"
-echo "** 5. Forca o Reinicio do Roteador       	            ***"
+echo "** 5. Forca o Reinicio do Roteador                    ***"
 echo "** 6. Mdk3 (Inundação SSID) Nomes Aleatorios          ***"
 echo "** 7. Desautenticação em Massa Derruba Ate a Sua Rede ***"
 echo "** 8. Ataca 6 Redes (Aireplay-ng)                     ***"
@@ -236,7 +236,7 @@ echo "Pronto, agora e so esperar"
 11)clear
 
 echo ""
-echo "Informe um nome para o SSID:"
+echo "Informe um nome para as Redes:"
 read VARIAVEL 
 for ins in {1..5000} ; do
 
