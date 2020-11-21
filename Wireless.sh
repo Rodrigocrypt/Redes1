@@ -4,6 +4,7 @@ airmon-ng check kill
 clear
 echo ""
 iwconfig
+echo ""
 echo "Digite a Interface Para Colocar em Modo Monitor"
 read WIRELLES
 ifconfig $WIRELLES down
@@ -24,15 +25,15 @@ echo "** 1. Ataca uma Rede                                  ***"
 echo "** 2. Ataca duas Redes                                ***"
 echo "** 3. Ataca Uma Rede (Macchanger)                     ***"
 echo "** 4. Ataca Com Mdk3,Aireplay-ng,Macchanger           ***"
-echo "** 5. Criar 50 Redes Com Airbase-ng (Inundação SSID)   ***"
-echo "** 6. Mdk3 (Inundação SSID)          ***"
+echo "** 5. Criar 50 Redes Com Airbase-ng (Inundação SSID)  ***"
+echo "** 6. Mdk3 (Inundação SSID)                           ***"
 echo "** 7. Desautenticação em Massa Derruba Ate a Sua Rede ***"
-echo "** 8. Ataca 6 Redes (Aireplay-ng)       ***"
-echo "** 9. Descobre ou Tenta a Senha Metodo WPS (Reaver)  ***"
+echo "** 8. Ataca 6 Redes (Aireplay-ng)                     ***"
+echo "** 9. Descobre ou Tenta a Senha Metodo WPS (Reaver)   ***"
 echo "** 10. Reinicia Sua Placa(Normal)                     ***"
 echo "**                                                    ***"
 echo "*********************************************************"
-echo "********** Anon_X95 ***************"
+echo "**********            Anon_X95            ***************"
 echo "*********************************************************"
 echo ""
 
