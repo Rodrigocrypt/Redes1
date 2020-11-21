@@ -17,3 +17,4 @@ e para executar o Script basta digitar o comando: ./Wireless.sh
 
 Vamos la, esse script foi desenvolvido para fins de aprendizado.
 
+Esse Script pode ser utilizado no SO Linux, ele foi desenvolvido no SO Kali Linux que e uma variante do Debian.
