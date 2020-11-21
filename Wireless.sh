@@ -53,6 +53,8 @@ echo "Vamos Fixar o Canal na Interface"
 clear
 echo "Aguarde ..."
 (xterm -title "$ESSID" -e airodump-ng $WIRELLES --bssid $BSSID --channel $CANAL)
+Sleep 3
+killall airodump-ng
 clear
 echo "Otimo Agora o Ataque Começa Aperte Crtl+c Pra Para o Ataque"
 read -p "Precione Qualquer Tecla Para Iniciar o Ataque"
