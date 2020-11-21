@@ -249,7 +249,7 @@ sleep 10
 
 
 6)clear
-echo "Vamos aos Seguintes Requistos Nessecidades:"
+echo "Vamos aos Seguintes Requistos Necessidades:"
 echo " 1 Wordlist Com SSIDS (Facil)"
 echo "Voce Tem Uma Wordlist S/N:"
 read S
