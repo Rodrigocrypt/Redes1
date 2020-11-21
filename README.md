@@ -7,5 +7,9 @@ Mdk3
 Xterm
 
 apt-get update
+
 apt-get install mdk3
+
 apt-get install xterm
+
+Vamos la, esse script foi desenvolvido para fins de aprendizado
